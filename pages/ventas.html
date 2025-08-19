@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous" />
+  <!-- AOS (animaciones suaves) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Inmobiliaria AC</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="menu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-active"  href="#">Ventas</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pages/alquiler.html">Alquileres</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pages/inversiones.html">Inversiones</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero ventas-hero">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Propiedades en Venta</h1>
+      <p>Unidades seleccionadas en Córdoba Capital y Zona Norte. Compará tipologías, ubicaciones y precios.</p>
+    </div>
+  </header>
+  <!-- Ventas -->
+  <main class="py-4">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Propiedad 1 -->
+        <div class="col-12 col-md-6 col-xl-4" data-aos="fade-up">
+          <div class="card neo sale-card h-100">
+            <div id="sale1" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="../assets/img/ventas/card1/ventascard1-4.webp" class="d-block w-100" alt="Fachada"></div>
+                <div class="carousel-item"><img src="../assets/img/ventas/card1/ventascard2-4.webp" class="d-block w-100" alt="Living"></div>
+                <div class="carousel-item"><img src="../assets/img/ventas/card1/ventascard3-4.webp" class="d-block w-100" alt="Cocina"></div>
+                <div class="carousel-item"><img src="../assets/img/ventas/card1/ventascard4-4.webp" class="d-block w-100" alt="Dormitorio"></div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#sale1" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#sale1" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+            </div>
+            <div class="card-body text-center">
+              <h3 class="card-title mb-1">3 Dorm - Dependencia de serv - Apto credito - Granja de Funes</h3>
+              <p class="card-text">- 3 dormitorios ( 1 en suite con escritorio en planta alta).</p>
+              <div class="d-flex justify-content-center gap-2 mb-2">
+                <span class="badge rounded-pill">1286 m²</span>
+                <span class="badge rounded-pill">Garage para 2 autos</span>
+                <span class="badge rounded-pill">Quincho cerrado y Pileta</span>
+              </div>
+              <div class="price">U$S 300.000</div>
+              <a href="#sale1" class="btn btn-neo mt-2 w-100">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Propiedad 2 -->
+        <div class="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="50">
+          <div class="card neo sale-card h-100">
+            <div id="sale2" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="../assets/img/ventas/card2/ventascard1-4.webp" class="d-block w-100" alt="Fachada edificio en Güemes"></div>
+                <div class="carousel-item"><img src="../assets/img/ventas/card2/ventascard2-4.webp" class="d-block w-100" alt="Cocina con isla"></div>
+                <div class="carousel-item"><img src="../assets/img/ventas/card2/ventascard3-4.webp" class="d-block w-100" alt="Estar comedor"></div>
+                <div class="carousel-item"><img src="../assets/img/ventas/card2/ventascard4-4.webp" class="d-block w-100" alt="Rooftop con asadores"></div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#sale2" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#sale2" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+            </div>
+            <div class="card-body text-center">
+              <h3 class="card-title mb-1">Casa One Housing - Complejo cerrado</h3>
+              <p class="card-text">Casas de 2 plantas con 3 dormitorios, doble cochera y patio con posibilidad de pileta.</p>
+              <div class="d-flex justify-content-center gap-2 mb-2">
+                <span class="badge rounded-pill">134 m²</span>
+                <span class="badge rounded-pill">Cocina semi-integrada</span>
+                <span class="badge rounded-pill">Living comedor amplio</span>
+              </div>
+              <div class="price">USD 269.000</div>
+              <a href="#sale2" class="btn btn-neo mt-2 w-100">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Propiedad 3 -->
+        <div class="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card neo sale-card h-100">
+            <div id="sale3" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="../assets/img/ventas/card3/ventascard1-4.webp" class="d-block w-100" alt="Fachada en Villa Belgrano"></div>
+                <div class="carousel-item"><img src="../assets/img/ventas/card3/ventascard2-4.webp" class="d-block w-100" alt="Comedor"></div>
+                <div class="carousel-item"><img src="../assets/img/ventas/card3/ventascard3-4.webp" class="d-block w-100" alt="Dormitorio amplio"></div>
+                <div class="carousel-item"><img src="../assets/img/ventas/card3/ventascard4-4.webp" class="d-block w-100" alt="Living"></div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#sale3" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#sale3" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+            </div>
+            <div class="card-body text-center">
+              <h3 class="card-title mb-1">Casa 4 dormitorios + Loft y gran parque</h3>
+              <p class="card-text">Exclusiva Casa en Villa Belgrano- Amplitud, confort y potencial de inversion.</p>
+              <div class="d-flex justify-content-center gap-2 mb-2">
+                <span class="badge rounded-pill">520 m² cubiertos</span>
+                <span class="badge rounded-pill"> 3 dormitorios en planta baja</span>
+                <span class="badge rounded-pill">4 Dormitorios</span>
+              </div>
+              <div class="price">USD 112.000</div>
+              <a href="#sale3" class="btn btn-neo mt-2 w-100">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Propiedad 4 -->
+        <div class="col-12 col-md-6 col-xl-4" data-aos="fade-up">
+          <div class="card neo sale-card h-100">
+            <div id="sale4" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="../assets/img/ventas/card4/ventascard1-4.webp" class="d-block w-100" alt="Fachada edificio"></div>
+                <div class="carousel-item"><img src="../assets/img/ventas/card4/ventascard2-4.webp" class="d-block w-100" alt="Living"></div>
+                <div class="carousel-item"><img src="../assets/img/ventas/card4/ventascard3-4.webp" class="d-block w-100" alt="Baño"></div>
+                <div class="carousel-item"><img src="../assets/img/ventas/card4/ventascard4-4.webp" class="d-block w-100" alt="Cocina con mueble bajo mesada"></div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#sale4" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#sale4" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+            </div>
+            <div class="card-body text-center">
+              <h3 class="card-title mb-1">Ciudad Gama - luminoso - hermosa vista - balcón con asador</h3>
+              <p class="card-text">Ubicados sobre avenida Colón al 5.000, de fácil acceso.</p>
+              <div class="d-flex justify-content-center gap-2 mb-2">
+                <span class="badge rounded-pill">60 m²</span>
+                <span class="badge rounded-pill"> Dormitorio luminoso con placar</span>
+                <span class="badge rounded-pill">Cocina separada</span>
+              </div>
+              <div class="price">USD 66.500</div>
+              <a href="#sale4" class="btn btn-neo mt-2 w-100">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Propiedad 5 -->
+        <div class="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="50">
+          <div class="card neo sale-card h-100">
+            <div id="sale5" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="../assets/img/ventas/card5/vetascard1-4.webp" class="d-block w-100" alt="Dúplex moderno con cochera"></div>
+                <div class="carousel-item"><img src="../assets/img/ventas/card5/ventascard2-4.webp" class="d-block w-100" alt="Cocina con barra"></div>
+                <div class="carousel-item"><img src="../assets/img/ventas/card5/ventascard3-4.webp" class="d-block w-100" alt="Dormitorio en suite"></div>
+                <div class="carousel-item"><img src="../assets/img/ventas/card5/ventascard4-4.webp" class="d-block w-100" alt="Escritorio o 3er dormitorio"></div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#sale5" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#sale5" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+            </div>
+            <div class="card-body text-center">
+              <h3 class="card-title mb-1">Excelente ubicación, dúplex en Nuevo Poeta Lugones</h3>
+              <p class="card-text">Barrio consolidado, accesos y servicios.</p>
+              <div class="d-flex justify-content-center gap-2 mb-2">
+                <span class="badge rounded-pill">180 cubiertos m²</span>
+                <span class="badge rounded-pill">3 dormitorios</span>
+                <span class="badge rounded-pill">Cochera para dos vehículos</span>
+              </div>
+              <div class="price">USD 165.000</div>
+              <a href="#sale5" class="btn btn-neo mt-2 w-100">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Propiedad 6 -->
+        <div class="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card neo sale-card h-100">
+            <div id="sale6" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="../assets/img/ventas/card6/ventascard1-4.webp" class="d-block w-100" alt="Fachada"></div>
+                <div class="carousel-item"><img src="../assets/img/ventas/card6/ventascard2-4.webp" class="d-block w-100" alt="Living"></div>
+                <div class="carousel-item"><img src="../assets/img/ventas/card6/ventascard3-4.webp" class="d-block w-100" alt="Cocina"></div>
+                <div class="carousel-item"><img src="../assets/img/ventas/card6/ventascard4-4.webp" class="d-block w-100" alt="Dormitorio amplio"></div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#sale6" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#sale6" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+            </div>
+            <div class="card-body text-center">
+              <h3 class="card-title mb-1">Apto Credito Tejas del sur 3 Dormitorios</h3>
+              <p class="card-text">Apto crédito-Con planos aprobados Cocina en PB y 3 Dorm en PA
+
+                .</p>
+              <div class="d-flex justify-content-center gap-2 mb-2">
+                <span class="badge rounded-pill">298m² cubiertos</span>
+                <span class="badge rounded-pill">Cochera para 3 autos</span>
+                <span class="badge rounded-pill">Calefaccion central
+                </span>
+              </div>
+              <div class="price">USD 340.000</div>
+              <a href="#sale6" class="btn btn-neo mt-2 w-100">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- CTA -->
+  <section class="py-5 why-us">
+    <div class="container text-center" data-aos="zoom-in">
+      <h2 class="mb-2">¿Querés una propuesta a medida?</h2>
+      <p class="p-contacto mx-auto mb-3">Analizamos tu perfil y te presentamos un mix de unidades y financiación.</p>
+      <a href="/pages/contacto.html" class="btn btn-neo">Contactar asesor</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-5">
+    <div class="container">
+      <p>Inmobiliaria AC — Córdoba, Argentina</p>
+      <div class="contenedor-lista-datos">
+        <ul class="lista-datos">
+          <li><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji/assets/svg/1f4de.svg" alt="" width="28" height="28"><span class="telefono">+54 351 555-1234</span></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji/assets/svg/2709.svg" alt="" width="28" height="28"><span class="mail">ventas@inmobiliariaac.com</span></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji/assets/svg/1f4cd.svg" alt="" width="28" height="28"><span class="direccion">Obispo Trejo 123, Córdoba Capital</span></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS + AOS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 650, once: true, easing: 'ease-out' });</script>
+</body>
+</html>

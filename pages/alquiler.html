@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+  
+    <!-- AOS (animaciones suaves) -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+  
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
+      <div class="container">
+          <a class="navbar-brand fw-bold namei" href="#">Inmobiliaria AC</a>
+              <button class="navbar-toggler" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#menu"
+                  aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link " href="../index.html">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../pages/ventas.html">Ventas</a></li>
+                  <li class="nav-item"><a class="nav-link nav-link-active" href="../pages/alquiler.html">Alquileres</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../pages/inversiones.html">Inversiones</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+    <!-- Hero -->
+    <header class="hero alquileres-hero">
+      <div class="hero-content" data-aos="fade-up">
+        <h1>Propiedades en Alquiler</h1>
+        <p>Opciones temporarias y tradicionales en los barrios más buscados de Córdoba: Nueva Córdoba, Güemes, General Paz y más.</p>
+      </div>
+    </header>
+  
+    <!-- propiedades -->
+    <main class="py-4">
+      <div class="container">
+        <div class="row g-4">
+  
+          <!-- Alquiler 1 -->
+          <div class="col-12 col-md-6 col-xl-4" data-aos="fade-up">
+            <div class="card neo rent-card h-100">
+              <div id="rent1" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active"><img src="../assets/img/alquiler/card1/alquilercard1-4.webp" class="d-block w-100" alt="Living depto en Nueva Córdoba"></div>
+                  <div class="carousel-item"><img src="../assets/img/alquiler/card1/alquilercard2-4.webp" class="d-block w-100" alt="Cocina integrada moderna"></div>
+                  <div class="carousel-item"><img src="../assets/img/alquiler/card1/alquilercard3-4.webp" class="d-block w-100" alt="Dormitorio principal"></div>
+                  <div class="carousel-item"><img src="../assets/img/alquiler/card1/alquilercard4-4.webp" class="d-block w-100" alt="Balcón al frente"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#rent1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#rent1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+              <div class="card-body text-center">
+                <h3 class="card-title mb-1">Alquiler Depto 1 Dorm Cochera y pileta - Veneto V Carlos Paz</h3>
+                <p class="card-text">1 dormitorio con placard
+                  cocina comedor amplia - antebaño y baño completo.</p>
+                <div class="d-flex justify-content-center gap-2 mb-2">
+                  <span class="badge rounded-pill">48 m²</span>
+                  <span class="badge rounded-pill">SUM totalmente equipado</span>
+                  <span class="badge rounded-pill">Pileta panoramica</span>
+                </div>
+                <div class="price">$ 420.000 / mes</div>
+                <a href="#rent1" class="btn btn-neo mt-2 w-100">Ver más</a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Alquiler 2 -->
+          <div class="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="50">
+            <div class="card neo rent-card h-100">
+              <div id="rent2" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active"><img src="../assets/img/alquiler/card2/alquilercard1-4.webp" class="d-block w-100" alt="Fachada edificio en Güemes"></div>
+                  <div class="carousel-item"><img src="../assets/img/alquiler/card2/alquilercard2-4.webp" class="d-block w-100" alt="Cocina con isla"></div>
+                  <div class="carousel-item"><img src="../assets/img/alquiler/card2/alquilercard3-4.webp" class="d-block w-100" alt="Estar comedor"></div>
+                  <div class="carousel-item"><img src="../assets/img/alquiler/card2/alquilercard4-4.webp" class="d-block w-100" alt="Rooftop con asadores"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#rent2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#rent2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+              <div class="card-body text-center">
+                <h3 class="card-title mb-1">Alquilo a Estrenar formato triplex en cañuelas chico</h3>
+                <p class="card-text">4 Dormitorios 1 co nbaño en suite.</p>
+                <div class="d-flex justify-content-center gap-2 mb-2">
+                  <span class="badge rounded-pill">180m² cubiertos</span>
+                  <span class="badge rounded-pill">Terraza</span>
+                  <span class="badge rounded-pill">Espacio para 2 vehículos</span>
+                </div>
+                <div class="price">$ 1.700.000 / mes</div>
+                <a href="#rent2" class="btn btn-neo mt-2 w-100">Ver más</a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Alquiler 3 -->
+          <div class="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card neo rent-card h-100">
+              <div id="rent3" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active"><img src="../assets/img/alquiler/card3/alquilercard1-4.webp" class="d-block w-100" alt="Fachada en General Paz"></div>
+                  <div class="carousel-item"><img src="../assets/img/alquiler/card3/alquilercard3-4.webp" class="d-block w-100" alt="Dormitorio cálido"></div>
+                  <div class="carousel-item"><img src="../assets/img/alquiler/card3/alquilercard3-4.webp" class="d-block w-100" alt="Cocina equipada"></div>
+                  <div class="carousel-item"><img src="../assets/img/alquiler/card3/alquilercard4-4.webp" class="d-block w-100" alt="Gimnasio del edificio"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#rent3" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visualmente-hidden"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#rent3" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visualmente-hidden"></span>
+                </button>
+              </div>
+              <div class="card-body text-center">
+                <h3 class="card-title mb-1">Betania Rondeau - 1 dorm C / Balcon  a estrenar - Amenities</h3>
+                <p class="card-text">Dormitorio con placard con interiores y puertas espejadas - cocina integrada con muebles bajo y sobre mesada.</p>
+                <div class="d-flex justify-content-center gap-2 mb-2">
+                  <span class="badge rounded-pill">45 m²</span>
+                  <span class="badge rounded-pill">Guardia de seguridad 24 hs</span>
+                  <span class="badge rounded-pill">Amenities</span>
+                </div>
+                <div class="price">$ $ 750.000 / mes</div>
+                <a href="#rent3" class="btn btn-neo mt-2 w-100">Ver más</a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Alquiler 4 -->
+          <div class="col-12 col-md-6 col-xl-4" data-aos="fade-up">
+            <div class="card neo rent-card h-100">
+              <div id="rent4" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active"><img src="../assets/img/alquiler/card4/alquilercard1-4.webp" class="d-block w-100" alt="Casa zona norte Córdoba"></div>
+                  <div class="carousel-item"><img src="../assets/img/alquiler/card4/alquilercard2-4.webp" class="d-block w-100" alt="Cocina amplia"></div>
+                  <div class="carousel-item"><img src="../assets/img/alquiler/card4/alquilercard3-4.webp" class="d-block w-100" alt="Jardín y galería"></div>
+                  <div class="carousel-item"><img src="../assets/img/alquiler/card4/alquilercard4-4.webp" class="d-block w-100" alt="Dormitorio secundario"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#rent4" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#rent4" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+              <div class="card-body text-center">
+                <h3 class="card-title mb-1">Alquilo - 1 Dorm - Urquiza 80 - Centro</h3>
+                <p class="card-text"> 1 dormitorio con placar, cocina integrada separada con barra, living comedor, 1 baño con ducha.</p>
+                <div class="d-flex justify-content-center gap-2 mb-2">
+                  <span class="badge rounded-pill">40 m²</span>
+                  <span class="badge rounded-pill"> 2 Años actualizacion trimestral</span>
+                  <span class="badge rounded-pill">Cochera</span>
+                </div>
+                <div class="price">$ 400.000 / mes</div>
+                <a href="#rent4" class="btn btn-neo mt-2 w-100">Ver más</a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Alquiler 5 -->
+          <div class="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="50">
+            <div class="card neo rent-card h-100">
+              <div id="rent5" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active"><img src="../assets/img/alquiler/card5/alquilercard1-4.webp" class="d-block w-100" alt="Dúplex moderno con cochera"></div>
+                  <div class="carousel-item"><img src="../assets/img/alquiler/card5/alquilercard2-4.webp" class="d-block w-100" alt="Cocina con barra desayunadora"></div>
+                  <div class="carousel-item"><img src="../assets/img/alquiler/card5/alquilercard3-4.webp" class="d-block w-100" alt="Dormitorio en suite"></div>
+                  <div class="carousel-item"><img src="../assets/img/alquiler/card5/alquiler4-4.webp" class="d-block w-100" alt="Espacio escritorio"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#rent5" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#rent5" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+              <div class="card-body text-center">
+                <h3 class="card-title mb-1">Gran Casa en Cerro Chico - Apta oficinas y vivienda</h3>
+                <p class="card-text">3 dormitorios amplios y luminosos, con placares empotrados y vistas.- 3 baños equipados, con detalles de diseño y materiales de alta calidad.</p>
+                <div class="d-flex justify-content-center gap-2 mb-2">
+                  <span class="badge rounded-pill"> 300 m² cubiertos</span>
+                  <span class="badge rounded-pill">3 Baños</span>
+                  <span class="badge rounded-pill">Cochera doble</span>
+                </div>
+                <div class="price">$ 1.700.000 / mes</div>
+                <a href="#rent5" class="btn btn-neo mt-2 w-100">Ver más</a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Alquiler 6 -->
+          <div class="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card neo rent-card h-100">
+              <div id="rent6" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active"><img src="../assets/img/alquiler/card6/alquilercard1-4.webp" class="d-block w-100" alt="Fachada ladrillo visto"></div>
+                  <div class="carousel-item"><img src="../assets/img/alquiler/card6/alquilercard2-4.webp" class="d-block w-100" alt="Cocina"></div>
+                  <div class="carousel-item"><img src="../assets/img/alquiler/card6/alquilercard3-4.webp" class="d-block w-100" alt="dormitorio"></div>
+                  <div class="carousel-item"><img src="../assets/img/alquiler/card6/alquilercard4-4.webp" class="d-block w-100" alt="Baño"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#rent6" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#rent6" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+              <div class="card-body text-center">
+                <h3 class="card-title mb-1">Cofico - Depto 1 dorm - Planta Baja</h3>
+                <p class="card-text">Departamento en barrio Cofico, ubicado en planta baja, con un dormitorio con placard, cocina-comedor. No posee patio ni balcón.</p>
+                <div class="d-flex justify-content-center gap-2 mb-2">
+                  <span class="badge rounded-pill">35 m²</span>
+                  <span class="badge rounded-pill">ctualización cuatrimestral por IPC</span>
+                  <span class="badge rounded-pill">Excelente zona</span>
+                </div>
+                <div class="price">$ 350.000 / mes</div>
+                <a href="#rent6" class="btn btn-neo mt-2 w-100">Ver más</a>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </main>
+  
+    <!-- CTA -->
+    <section class="py-5 why-us">
+      <div class="container text-center" data-aos="zoom-in">
+        <h2 class="mb-2">¿No encontraste lo que buscás?</h2>
+        <p class="p-contacto mx-auto mb-3">Contanos tus preferencias y te enviamos un listado actualizado.</p>
+        <a href="/pages/contacto.html" class="btn btn-neo">Contactar asesor</a>
+      </div>
+    </section>
+  
+    <!-- Footer -->
+    <footer class="mt-5">
+      <div class="container">
+        <p>Inmobiliaria AC — Córdoba, Argentina</p>
+        <div class="contenedor-lista-datos">
+          <ul class="lista-datos">
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji/assets/svg/1f4de.svg" alt="" width="28" height="28">
+              <span class="telefono">+54 351 555-1234</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji/assets/svg/2709.svg" alt="" width="28" height="28">
+              <span class="mail">alquileres@inmobiliariaac.com</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji/assets/svg/1f4cd.svg" alt="" width="28" height="28">
+              <span class="direccion">Obispo Trejo 123, Córdoba Capital</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  
+    <!-- Bootstrap JS + AOS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 650, once: true, easing: 'ease-out' });
+    </script>
+  </body>
+  </html>

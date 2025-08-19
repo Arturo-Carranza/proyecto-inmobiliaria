@@ -1,0 +1,438 @@
+@use 'variables';
+/* == 01) Reset y tipografías básicas ========================== */
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Arial',sans-serif;
+}
+
+html,body {
+  height:100%;
+  background:radial-gradient(1200px 800px at 10% 0%,#0c0e12 0%,variables.$bg 60%),radial-gradient(1200px 800px at 90% 100%,#10131b 0%,variables.$bg 60%);
+  color: variables.$text;
+  scroll-behavior:smooth;
+}
+body {
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji",sans-serif;
+  line-height:1.6;
+}
+/* == 03.1) Enlaces ============================================ */
+a {
+  color: variables.$text;
+  text-decoration:none;
+
+  &:hover {
+    color:variables.$brand;
+  }
+
+}
+h1,h2,h3 {
+  line-height:1.2;
+  margin:0 0 .6rem;
+}
+h1 {
+  font-weight:800;
+  letter-spacing:-.02em;
+}
+h2 {
+  font-weight:700;
+}
+h3 {
+  font-weight:600;
+}
+/* == 04) Navbar =========================================== */
+.navbar-custom {
+  background:linear-gradient(180deg,#0e1117 0%,#0b0e13 100%);
+  border-bottom:1px solid rgba(255,255,255,.06);
+  .navbar-brand {
+    color:variables.$text;
+    letter-spacing:.1px;
+    
+  }
+  .navbar-toggler {
+    border:1px solid rgba(255,255,255,.25);
+    padding:.35rem .6rem;
+    filter:drop-shadow(0 0 1px rgba(0,0,0,.6));
+  }
+  .nav-link {
+    
+    display:inline-block;
+    padding:.5rem .75rem;
+    color:variables.$muted;
+    border-bottom:2px solid transparent;
+    transition:color .2s ease,background-color .2s ease,border-color .2s ease;
+    -webkit-tap-highlight-color:transparent;
+    &:hover,&:focus {
+      color:variables.$brand;
+      text-decoration:none;
+      border-bottom-color:rgba(76,201,240,.45);
+    }
+    &:focus {
+      outline:none;
+      box-shadow:0 0 0 3px rgba(76,201,240,.25);
+      border-radius:8px;
+    }
+  
+  }
+}
+.badge-soft { background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.08); }
+        .section-caption { color: var(--muted); max-width: 70ch; margin-inline:auto; }
+        .invest-meta { gap:.5rem; flex-wrap: wrap; }
+        .invest-title { display:flex; align-items:center; gap:.5rem; }
+        .ventas-hero h1 { margin-bottom: .25rem; }
+        .ventas-hero p { color: var(--muted); margin: 0 auto; max-width: 70ch; }
+        .sale-card .badge { background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.08); }
+        .sale-card .price { font-weight: 800; }
+        .sale-card:hover { transform: translateY(-2px); transition: transform .15s ease; }
+      .alquileres-hero h1 { margin-bottom: .25rem; }
+      .alquileres-hero p { color: var(--muted); margin: 0 auto; max-width: 70ch; }
+      .rent-card .badge { background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.08); }
+      .rent-card .price { font-weight: 800; }
+    /* micro-animación hover en cards (discreta, suma al AOS) */
+    .rent-card:hover { transform: translateY(-2px); transition: transform .15s ease; }
+/* == 05) Hero ============================================= */
+.hero {
+  position:relative;
+  min-height:clamp(52vh,68vh,78vh);
+  display:grid;
+  place-items:center;
+  padding:clamp(2rem,5vw,4rem) 1rem;
+  background:radial-gradient(1200px 800px at 10% 10%,rgba(67,97,238,.25),transparent 60%),radial-gradient(900px 700px at 100% 100%,rgba(76,201,240,.18),transparent 55%);
+  border-bottom:1px solid rgba(255,255,255,.06);
+  &::after {
+    content:"";
+    position:absolute;
+    inset:0;
+    background:radial-gradient(600px 300px at 50% 0%,rgba(34,197,94,.08),transparent 60%);
+    pointer-events:none;
+  }
+  .hero-content {
+    max-width:980px;
+    text-align:center;
+    padding:clamp(1rem,2vw,1.5rem);
+  }
+  h1 {
+    font-size:clamp(1.9rem,3.6vw,3rem);
+    margin-bottom:.6rem;
+  }
+  p {
+    font-size:clamp(1rem,1.4vw,1.15rem);
+    color:variables.$muted;
+    margin:0 auto;
+    max-width:60ch;
+  }
+}
+/* == 06) About us) ========================= */
+.about {
+  padding:clamp(2rem,6vw,4rem) 1rem;
+  >h2 {
+    text-align:center;
+    margin-bottom:1.5rem;
+  }
+  .about-content {
+    display:grid;
+    gap:1.25rem;
+    grid-template-columns:1fr;
+  }
+  .about-text {
+    font-size:large;
+    background:variables.$bg-elev;
+    border-radius:variables.$r-lg;
+    padding:clamp(1rem,3vw,1.5rem);
+    box-shadow:variables.$shadow-soft;
+    color:variables.$muted;
+  }
+  .about-image {
+    display:grid;
+    place-items:center;
+    img {
+      width:100%;
+      height:auto;
+      border-radius:variables.$r-lg;
+      display:block;
+      box-shadow:10px 10px 22px rgba(0,0,0,.5),-4px -4px 12px rgba(255,255,255,.05);
+      object-fit:cover;
+    }
+  }
+}
+@media (min-width:768px) {
+  .about {
+    .about-content {
+      grid-template-columns:1.15fr .85fr;
+      align-items:center;
+    }
+  }
+}
+/* == .why-us) == */
+.why-us {
+  padding:clamp(2rem,6vw,4rem) 0 3rem;
+  background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,0) 35%),radial-gradient(700px 500px at 0% 100%,rgba(67,97,238,.08),transparent 60%);
+  border-top:1px solid rgba(255,255,255,.06);
+  h2 {
+    text-align:center;
+    margin-bottom:1.5rem;
+  }
+  .features {
+    display:grid;
+    gap:1rem;
+    grid-template-columns:1fr;
+    .feature {
+      background:variables.$bg-elev;
+      border-radius:variables.$r-lg;
+      padding:1.1rem;
+      box-shadow:variables.$shadow-soft;
+      border:1px solid rgba(255,255,255,.06);
+      transition:transform .07s ease,box-shadow .25s ease;
+      &:hover {
+        transform:translateY(-3px);
+        box-shadow:12px 12px 26px rgba(0,0,0,.55),-10px -10px 24px rgba(255,255,255,.05);
+      }
+      h3 {
+        margin-bottom:.35rem;
+      }
+      p {
+        color:variables.$muted;
+        margin:0;
+      }
+    }
+  }
+}
+@media (min-width:576px) {
+  .why-us {
+    .features {
+      grid-template-columns:repeat(2,1fr);
+    }
+  }
+}
+@media (min-width:992px) {
+  .why-us {
+    .features {
+      grid-template-columns:repeat(4,1fr);
+    }
+  }
+}
+/* == 08) Footer / Datos de contacto ====================== */
+footer {
+  margin-top:2rem;
+  padding:2rem 1rem 3rem;
+  background:#0d1016;
+  border-top:1px solid rgba(255,255,255,.06);
+  p {
+    text-align:center;
+    margin:0 auto 1rem;
+    max-width:65ch;
+    color:variables.$muted;
+  }
+  .contenedor-lista-datos {
+    display:grid;
+    place-items:center;
+  }
+  .lista-datos {
+    list-style:none;
+    padding:0;
+    margin:0;
+    width:min(920px,92%);
+    display:grid;
+    gap:.75rem;
+    li {
+      display:grid;
+      grid-template-columns:36px 1fr;
+      align-items:center;
+      gap:.75rem;
+      background:variables.$bg-elev;
+      border-radius:variables.$r-md;
+      padding:.75rem .9rem;
+      box-shadow:variables.$shadow-soft;
+      border:1px solid rgba(255,255,255,.06);
+    }
+    img {
+      width:28px;
+      height:28px;
+      display:block;
+      opacity:.9;
+    }
+  }
+  .telefono,.mail,.direccion {
+    color:variables.$text;
+  }
+}
+@media (min-width:576px) {
+  footer {
+    .lista-datos {
+      grid-template-columns:1fr 1fr;
+    }
+  }
+}
+@media (min-width:992px) {
+  footer {
+    .lista-datos {
+      grid-template-columns:1fr 1fr 1fr;
+    }
+  }
+}
+/* == 09) Accesibilidad ================================ */
+:focus-visible {
+  outline:2px solid variables.$brand;
+  outline-offset:2px;
+  border-radius:6px;
+}
+/* == 10) Cards neomórficas (.card.neo) ==================== */
+.card {
+  &.neo {
+    background:variables.$bg-elev;
+    color:variables.$text;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,.06);
+    overflow:hidden;
+    box-shadow:12px 12px 26px variables.$neo-dark,-10px -10px 24px variables.$neo-light;
+    transition:transform .15s ease,box-shadow .15s ease;
+    &:hover {
+      transform:translateY(-2px);
+      box-shadow:16px 16px 34px rgba(0,0,0,.55),-12px -12px 28px rgba(255,255,255,.06);
+    }
+    .carousel-item {
+      img {
+        height:260px;
+        object-fit:cover;
+      }
+    }
+    @media (max-width:576px) {
+      .carousel-item {
+        img {
+          height:200px;
+        }
+      }
+    }
+    .card-body {
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:.5rem;
+      padding:1.1rem 1rem 1.4rem;
+    }
+    .card-title {
+      font-weight:700;
+    }
+    .card-text {
+      color:variables.$muted;
+      margin:0;
+    }
+    .price {
+      font-weight:800;
+      font-size:1.05rem;
+      background:rgba(255,255,255,0.04);
+      border-radius:12px;
+      padding:.3rem .6rem;
+    }
+    @media (max-width:575.98px) {
+      .carousel-item {
+        img {
+          height:200px;
+        }
+      }
+    }
+    @media (min-width:1200px) {
+      .carousel-item {
+        img {
+          height:300px;
+        }
+      }
+    }
+  }
+}
+/* Contacto: títulos ============================ */
+.titulo-contacto {
+  font-weight:800;
+  letter-spacing:-.02em;
+}
+/*  Contacto: párrafo =========================== */
+.p-contacto {
+  color:variables.$muted;
+  margin:0 auto;
+  max-width:60ch;
+}
+/* Formulario neomórfico ========================== */
+.form-neo {
+  max-width:880px;
+  background:variables.$bg-elev;
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:22px;
+  padding:clamp(1rem,3vw,1.5rem);
+  box-shadow:12px 12px 26px variables.$neo-dark,-10px -10px 24px variables.$neo-light;
+}
+/* Inputs neomórficos =========================== */
+.input-neo {
+  background:#555a66;
+  color:variables.$text;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:14px;
+  padding:.6rem .9rem;
+  box-shadow:inset 6px 6px 12px rgba(0,0,0,.45),inset -6px -6px 12px rgba(255,255,255,.05);
+  &:focus {
+    outline:none;
+    border-color:rgba(76,201,240,.45);
+    box-shadow:0 0 0 3px rgba(76,201,240,.20),inset 6px 6px 12px rgba(0,0,0,.45),inset -6px -6px 12px rgba(255,255,255,.05);
+  }
+}
+/* == 12.2) Etiquetas =================================== */
+.form-label {
+  color:variables.$text;
+  font-weight:600;
+}
+/* == 12.3) Textos de ayuda ============================= */
+.form-text {
+  color:variables.$muted;
+}
+/* == 12.4) Textarea ==================================== */
+.txtarea {
+  min-height:140px;
+  resize:vertical;
+}
+/* == 13) Botón neomórfico =============================== */
+.btn-neo {
+  
+  background:radial-gradient(200px 100px at 20% 10%,rgba(255,255,255,.06),transparent 60%),variables.$btn-bg;
+  color:variables.$text;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:14px;
+  padding:.6rem 1.25rem;
+  font-weight:700;
+  letter-spacing:.2px;
+  box-shadow:8px 8px 16px variables.$neo-dark,-6px -6px 14px variables.$neo-light;
+  transition:transform .1s ease,box-shadow .12s ease,border-color .12s ease;
+  &:hover {
+    transform:translateY(-1px);
+    border-color:rgba(255,255,255,.14);
+    box-shadow:10px 10px 20px rgba(0,0,0,.55),-8px -8px 18px rgba(255,255,255,.07);
+  }
+  &:active {
+    transform:translateY(0);
+    box-shadow:inset 6px 6px 12px rgba(0,0,0,.45),inset -6px -6px 12px rgba(255,255,255,.06);
+  }
+
+/* == 14) Validación Bootstrap ========================= */
+.was-validated {
+  .form-control:invalid {
+    border-color:#dc3545;
+  }
+  .form-control:valid {
+    border-color:#198754;
+  }
+  .form-control:invalid~/* == 14.3) Mensajes de error ========================= */
+.invalid-feedback {
+    display:block;
+  }
+}
+/* == 14.1) Estados invalid ========================== */
+.form-control.is-invalid {
+  border-color:#dc3545;
+}
+/* == 14.2) Estados valid ============================ */
+.form-control.is-valid {
+  border-color:#198754;
+}
+.invalid-feedback {
+  display:none;
+}
+}
