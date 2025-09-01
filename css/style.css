@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* == 01) Reset y tipografías básicas ========================== */
+/* == Reset y tipografías básicas ========================== */
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +19,7 @@ body {
   line-height: 1.6;
 }
 
-/* == 03.1) Enlaces ============================================ */
+/* ==  Enlaces ============================================ */
 a {
   color: #e6e9ef;
   text-decoration: none;
@@ -46,7 +46,7 @@ h3 {
   font-weight: 600;
 }
 
-/* == 04) Navbar =========================================== */
+/* ==  Navbar =========================================== */
 .navbar-custom {
   background: linear-gradient(180deg, #0e1117 0%, #0b0e13 100%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
@@ -150,7 +150,7 @@ h3 {
   transition: transform 0.15s ease;
 }
 
-/* == 05) Hero ============================================= */
+/* ==  Hero ============================================= */
 .hero {
   position: relative;
   min-height: 68vh;
@@ -183,7 +183,7 @@ h3 {
   max-width: 60ch;
 }
 
-/* == 06) About us) ========================= */
+/* ==  About us ========================= */
 .about {
   padding: clamp(2rem, 6vw, 4rem) 1rem;
 }
@@ -223,7 +223,7 @@ h3 {
     align-items: center;
   }
 }
-/* == .why-us) == */
+/* == Why-us == */
 .why-us {
   padding: clamp(2rem, 6vw, 4rem) 0 3rem;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0) 35%), radial-gradient(700px 500px at 0% 100%, rgba(67, 97, 238, 0.08), transparent 60%);
@@ -268,7 +268,7 @@ h3 {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-/* == 08) Footer / Datos de contacto ====================== */
+/* ==  Footer / Datos de contacto ====================== */
 footer {
   margin-top: 2rem;
   padding: 2rem 1rem 3rem;
@@ -324,14 +324,14 @@ footer .telefono, footer .mail, footer .direccion {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-/* == 09) Accesibilidad ================================ */
+/* ==  Accesibilidad ================================ */
 :focus-visible {
   outline: 2px solid #4cc9f0;
   outline-offset: 2px;
   border-radius: 6px;
 }
 
-/* == 10) Cards neomórficas (.card.neo) ==================== */
+/* ==  Cards neomórficas (.card.neo) ==================== */
 .card.neo {
   background: #151821;
   color: #e6e9ef;
@@ -424,24 +424,24 @@ footer .telefono, footer .mail, footer .direccion {
   box-shadow: 0 0 0 3px rgba(76, 201, 240, 0.2), inset 6px 6px 12px rgba(0, 0, 0, 0.45), inset -6px -6px 12px rgba(255, 255, 255, 0.05);
 }
 
-/* == 12.2) Etiquetas =================================== */
+/* ==  Etiquetas =================================== */
 .form-label {
   color: #e6e9ef;
   font-weight: 600;
 }
 
-/* == 12.3) Textos de ayuda ============================= */
+/* ==  Textos de ayuda ============================= */
 .form-text {
   color: #a6adbb;
 }
 
-/* == 12.4) Textarea ==================================== */
+/* ==  Textarea ==================================== */
 .txtarea {
   min-height: 140px;
   resize: vertical;
 }
 
-/* == 13) Botón neomórfico =============================== */
+/* == Botón neomórfico =============================== */
 .btn-neo {
   background: radial-gradient(200px 100px at 20% 10%, rgba(255, 255, 255, 0.06), transparent 60%), #171b24;
   color: #e6e9ef;
@@ -452,9 +452,9 @@ footer .telefono, footer .mail, footer .direccion {
   letter-spacing: 0.2px;
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5), -6px -6px 14px rgba(255, 255, 255, 0.08);
   transition: transform 0.1s ease, box-shadow 0.12s ease, border-color 0.12s ease;
-  /* == 14) Validación Bootstrap ========================= */
-  /* == 14.1) Estados invalid ========================== */
-  /* == 14.2) Estados valid ============================ */
+  /* ==  Validación Bootstrap ========================= */
+  /* ==  Estados invalid ========================== */
+  /* ==  Estados valid ============================ */
 }
 .btn-neo:hover {
   transform: translateY(-1px);
