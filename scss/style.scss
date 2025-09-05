@@ -1,4 +1,6 @@
-@use 'variables';
+@forward './globals/';
+@use '../scss/globals/boilerplate';
+@use './globals/variables' as variables;
 /* == Reset y tipografías básicas ========================== */
 * {
   margin:0;
@@ -13,33 +15,11 @@ html,body {
   color: variables.$text;
   scroll-behavior:smooth;
 }
-body {
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji",sans-serif;
-  line-height:1.6;
-}
+
 /* ==  Enlaces ============================================ */
 a {
   color: variables.$text;
   text-decoration:none;
-
-  &:hover {
-    color:variables.$brand;
-  }
-
-}
-h1,h2,h3 {
-  line-height:1.2;
-  margin:0 0 .6rem;
-}
-h1 {
-  font-weight:800;
-  letter-spacing:-.02em;
-}
-h2 {
-  font-weight:700;
-}
-h3 {
-  font-weight:600;
 }
 /* ==  Navbar =========================================== */
 .navbar-custom {
@@ -76,13 +56,28 @@ h3 {
   
   }
 }
+/*== Inversiones estilos span=====*/
+.card-body{
+  .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .badge-soft { background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.08); }
         .section-caption { color: var(--muted); max-width: 70ch; margin-inline:auto; }
         .invest-meta { gap:.5rem; flex-wrap: wrap; }
         .invest-title { display:flex; align-items:center; gap:.5rem; }
         .ventas-hero h1 { margin-bottom: .25rem; }
         .ventas-hero p { color: var(--muted); margin: 0 auto; max-width: 70ch; }
-        .sale-card .badge { background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.08); }
+        .sale-card {
+            display: flex;
+            flex-direction: column;
+            max-width: 420px; 
+            margin-left: auto;
+            min-height: 600px;}
+          
+        .badge { background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.08); }
         .sale-card .price { font-weight: 800; }
         .sale-card:hover { transform: translateY(-2px); transition: transform .15s ease; }
       .alquileres-hero h1 { margin-bottom: .25rem; }
@@ -93,6 +88,7 @@ h3 {
     .rent-card:hover { transform: translateY(-2px); transition: transform .15s ease; }
 /* ==  Hero ============================================= */
 .hero {
+
   position:relative;
   min-height:clamp(52vh,68vh,78vh);
   display:grid;
@@ -122,7 +118,7 @@ h3 {
     margin:0 auto;
     max-width:60ch;
   }
-}
+  }
 /* ==  About us ========================= */
 .about {
   padding:clamp(2rem,6vw,4rem) 1rem;
